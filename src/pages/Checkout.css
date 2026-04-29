@@ -1,0 +1,243 @@
+.checkout-page {
+  padding: 52px 20px 100px;
+}
+
+.checkout-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.back-btn {
+  width: 40px;
+  height: 40px;
+  background: var(--cream);
+  border: none;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-dark);
+  transition: all 0.15s;
+}
+
+.back-btn:active {
+  background: var(--latte);
+}
+
+/* Sections */
+.checkout-section {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow-card);
+}
+
+.checkout-section-title {
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 14px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-mid);
+  margin-bottom: 6px;
+  letter-spacing: 0.02em;
+}
+
+.input-field.error {
+  border-color: var(--rose);
+}
+
+.field-error {
+  font-size: 11px;
+  color: var(--rose);
+  margin-top: 4px;
+  display: block;
+}
+
+/* Fulfillment Summary */
+.fulfillment-summary {
+  background: linear-gradient(135deg, var(--dark-roast), var(--medium-roast));
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+.fulfillment-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.fulfillment-icon {
+  color: var(--golden);
+  flex-shrink: 0;
+}
+
+.fulfillment-info-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--cream);
+  margin-bottom: 2px;
+}
+
+.fulfillment-info-sub {
+  font-size: 12px;
+  color: rgba(245,236,215,0.6);
+}
+
+.fulfillment-eta {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(232,168,76,0.2);
+  color: var(--golden);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 6px 10px;
+  border-radius: var(--radius-pill);
+  flex-shrink: 0;
+}
+
+/* Payment */
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px;
+  border: 1.5px solid var(--latte);
+  border-radius: var(--radius-sm);
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: var(--font-body);
+  text-align: left;
+  color: var(--text-mid);
+}
+
+.payment-option.active {
+  border-color: var(--caramel);
+  background: rgba(196,131,42,0.06);
+  color: var(--caramel);
+}
+
+.payment-option-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: inherit;
+  margin-bottom: 2px;
+}
+
+.payment-option-sub {
+  font-size: 11px;
+  color: var(--text-light);
+}
+
+.payment-option.active .payment-option-title {
+  color: var(--espresso);
+}
+
+/* Order summary */
+.order-summary {}
+
+.summary-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.summary-line:last-child {
+  margin-bottom: 0;
+}
+
+.summary-line-qty {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--caramel);
+  min-width: 22px;
+}
+
+.summary-line-name {
+  flex: 1;
+  font-size: 13px;
+  color: var(--text-mid);
+}
+
+.summary-line-price {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--espresso);
+}
+
+.total-line {
+  font-weight: 700;
+}
+
+.total-line .summary-line-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--espresso);
+}
+
+.total-line .summary-line-price {
+  font-size: 17px;
+  color: var(--caramel);
+}
+
+/* Place order */
+.place-order-wrap {
+  position: sticky;
+  bottom: calc(var(--nav-height) + 12px);
+}
+
+.place-order-btn {
+  font-size: 16px;
+  padding: 18px;
+}
+
+.place-order-btn.processing {
+  opacity: 0.85;
+  cursor: not-allowed;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(26,10,0,0.3);
+  border-top-color: var(--espresso);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

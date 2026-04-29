@@ -1,0 +1,243 @@
+.cart-page {
+  padding: 52px 20px 100px;
+}
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cart-item-count {
+  font-size: 13px;
+  color: var(--text-light);
+  background: var(--cream);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+  font-weight: 500;
+}
+
+/* Fulfillment */
+.fulfillment-section {
+  margin-bottom: 20px;
+}
+
+.fulfillment-toggle {
+  display: flex;
+  background: var(--cream);
+  border-radius: var(--radius-sm);
+  padding: 4px;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.fulfillment-opt {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--text-light);
+  background: transparent;
+}
+
+.fulfillment-opt.active {
+  background: var(--dark-roast);
+  color: var(--golden);
+  box-shadow: 0 2px 8px rgba(44,24,16,0.2);
+}
+
+.delivery-note,
+.pickup-note {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-light);
+  padding: 0 4px;
+}
+
+/* Cart items */
+.cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  display: flex;
+  gap: 12px;
+  background: var(--white);
+  border-radius: 16px;
+  padding: 14px;
+  box-shadow: var(--shadow-card);
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+.cart-item-emoji {
+  font-size: 28px;
+  width: 48px;
+  height: 48px;
+  background: var(--cream);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.cart-item-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.cart-item-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--espresso);
+  margin-bottom: 3px;
+}
+
+.cart-item-customs {
+  font-size: 11px;
+  color: var(--text-light);
+  margin-bottom: 2px;
+}
+
+.cart-item-notes {
+  font-size: 11px;
+  color: var(--caramel);
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+.cart-item-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.cart-item-price {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--caramel);
+}
+
+.cart-item-controls {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: var(--cream);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+}
+
+.cart-qty-btn {
+  width: 32px;
+  height: 32px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--medium-roast);
+  transition: background 0.15s;
+}
+
+.cart-qty-btn:active {
+  background: var(--latte);
+}
+
+.cart-qty-val {
+  min-width: 24px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--espresso);
+}
+
+/* Summary */
+.cart-summary {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: var(--shadow-card);
+  margin-bottom: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: var(--text-mid);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.summary-row:last-child {
+  margin-bottom: 0;
+}
+
+.summary-row.total {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--espresso);
+}
+
+.summary-row.total span:last-child {
+  color: var(--caramel);
+}
+
+/* Checkout */
+.cart-checkout {
+  position: sticky;
+  bottom: calc(var(--nav-height) + 12px);
+}
+
+.checkout-btn {
+  font-size: 16px;
+  padding: 18px;
+}
+
+/* Empty state */
+.cart-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.empty-bag {
+  color: var(--latte);
+  margin-bottom: 20px;
+}
+
+.empty-title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  color: var(--espresso);
+  margin-bottom: 8px;
+}
+
+.empty-sub {
+  font-size: 15px;
+  color: var(--text-light);
+  line-height: 1.6;
+}
